@@ -1,0 +1,20 @@
+{
+  "name": "starterapp",
+  "version": "1.0.0",
+  "description": "A plain starter app",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.9.2"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "chai-as-promised": "^4.1.1",
+    "mocha": "^1.21.4",
+    "supertest": "^0.13.0"
+  }
+}
