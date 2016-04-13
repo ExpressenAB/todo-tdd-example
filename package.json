@@ -12,9 +12,10 @@
     "express": "^4.9.2"
   },
   "devDependencies": {
-    "chai": "^1.9.1",
-    "chai-as-promised": "^4.1.1",
-    "mocha": "^1.21.4",
-    "supertest": "^0.13.0"
+    "chai": "^3.5.0",
+    "chai-as-promised": "5.3.0",
+    "eslint": "^2.7.0",
+    "mocha": "^2.4.5",
+    "supertest": "^1.2.0"
   }
 }

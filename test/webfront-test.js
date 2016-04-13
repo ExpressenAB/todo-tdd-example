@@ -1,3 +1,5 @@
+"use strict";
+
 var request = require("supertest");
 var app = require("../");
 
@@ -9,5 +11,4 @@ describe("Webfront", function () {
       .expect(200)
       .expect(/Hello World/, done);
   });
-  
 });
