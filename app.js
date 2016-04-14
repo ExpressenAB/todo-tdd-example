@@ -1,13 +1,22 @@
 "use strict";
 
-var express = require("express");
-var app = express();
+const express = require("express");
+const bodyParser = require("body-parser");
+const storage = require("./lib/storage");
 
-app.get("/", function (req, res) {
-  res.send("Hello World");
+const app = express();
+app.use(bodyParser.json());
+
+app.post("/api/todo", (req, res) => {
+  const id = storage.create(req.body)
+  res.send({"id": id});
 });
 
-var server = app.listen(3000, function () {
+app.get("/api/todo", (req, res) => {
+  res.send(storage.fetchAll());
+});
+
+const server = app.listen(3000, () => {
   console.log("Listening on port %d", server.address().port);
 });
 

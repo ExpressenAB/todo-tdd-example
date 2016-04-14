@@ -8,8 +8,11 @@ process.env.TZ = "Europe/Stockholm";
 // This file is required with ./test/mocha.opts
 process.env.NODE_ENV = "test";
 
-var chai = require("chai");
-var chaiAsPromised = require("chai-as-promised");
+// Setup common test libraries
+require("mocha-cakes-2");
+
+const chai = require("chai");
+const chaiAsPromised = require("chai-as-promised");
 
 chai.config.truncateThreshold = 0;
 chai.config.includeStack = true;
