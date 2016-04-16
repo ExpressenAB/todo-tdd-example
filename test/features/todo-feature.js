@@ -21,7 +21,7 @@ Feature("TODO", () => {
   Scenario("Fetch all TODOs", () => {
     after(storage.reset);
 
-    var response;
+    let response;
     Given("There is a bunch of TODOs", () => {
       storage.create({"item": "item one"});
       storage.create({"item": "item two"});
